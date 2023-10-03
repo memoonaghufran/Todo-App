@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="navb">
+            <nav class="navbar">
+                <div class="task">
+                    <div class="task-img">
+                        <img src="img/white-task.png" alt="">
+                    </div>
+                    <div class="nav-item1">
+                        <li>Task</li>
+                    </div>
+                </div>
+
+
+                <div class="location">
+                    <div class="location-img">
+                        <img src="img/location.png" alt="">
+                    </div>
+                    <div class="nav-item2">
+                        <li><a href="Location.html" class="location-anchor">Location</a></li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+
+        <!-- pop login start -->
+        <div class="login_box"  id="login_box">
+            <div class="popup" id="popup_id">
+                
+                <h1 class="add-task-heading">New Task</h1>
+                <div class="summary">
+                    <img src="img/summary.png" alt="" class="summary-img">
+                    <input type="text" class="summary-input" id="taskInput" placeholder="Summary">
+                </div>
+        
+                <div class="description">
+                    <img src="img/description.png" alt="" class="description-img">
+                    <input type="text" class="description-input" placeholder="Description" id="description_input">
+                </div>
+        
+                <div class="duetime">
+                    <img src="img/duedate.png" alt="" class="duedate-img">
+                    <input type="text" class="duedate-input" placeholder="Due date" id="duedate_input">
+                </div>
+                <div class="footer">
+                    <button class="add-task-box-btn" onclick="add_data()" id="addTask">Save</button>
+                    <p class="cancel" onclick="togglepopup('login_box', 'h')">Cancel</p>
+                </div>
+            
+            </div>
+            </div>
+            <!-- pop login  end -->
+    
+            <div class="data" id="data">
+                <h3 id="login_popid" onclick="togglepopup('login_box','s')">+ Add new task</h3>
+                <p class="incom">Incomplete</p>
+    
+                <ul id="uncompletedTasks" >
+                  <!-- incomplite data -->
+                </ul>
+    
+    
+                <p class="com">Complete</p>
+                <ul id="completedTasks">
+                   <!-- data of complite -->
+                </ul>
+            </div>
+
+
+            
+
+
+        <!-- Log_Out -->
+        <div class="log">
+            <div class="log-img">
+                <img src="img/logout.png" alt="">
+            </div>
+            <div class="log-content">
+                <p><a href="First.html" class="back-to-first-anchor">Logout</a></p>
+            </div>
+        </div>
+
+
+
+
+        <!-- Pop_Up -->
+        <div class="container3">
+            <h3 class="pop-heading">Submit my resume</h3>
+            <div class="pop">
+                <p class="pop-para">Send my resume to DigitalTolk</p>
+
+                <div class="img-container">
+                    <img src="img/Vector.png" id="vector">
+                    <img src="img/clock.png" id="clock">
+                </div>
+
+            </div>
+            <div class="end-portion">
+                <p class="skip">Skip</p>
+                <p class="remind-later">Remind me later</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="Second.js"></script>
+</body>
+
+</html>
